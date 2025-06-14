@@ -1,0 +1,317 @@
+body{
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color:rgb(229, 238, 238);
+    font-weight: bold;
+}
+header{
+    background-color: white;
+    display:grid;
+    grid-template-columns:repeat(3,minmax(150px,auto));
+    padding: 1.25rem;
+    justify-content: space-evenly;
+    justify-content: space-around;
+
+}
+header img{
+    width:14vw;
+    height:auto;
+}
+.headlinks{
+    display:inline-block;
+    width:6.7vw;
+    height: auto;
+    text-decoration: none;
+    background-color:blue;
+    color:white;
+    text-align: center;
+    border-radius: 0.313rem;
+    padding:0.5rem;
+}
+header input{
+    width:17vw;
+    padding:0.5rem;
+    border:none;
+    background-color: rgb(229, 238, 238);
+}
+#search{
+    background-color:orange;
+}
+#login{
+    margin-right: 3vw;
+    
+}
+#cart{
+    padding-left: .7rem;
+    padding-right: .7rem;
+}
+.container img{
+    width: 100%;
+    height:auto;
+}
+.container{
+    display:grid;
+    background-color: white;
+    grid-template-columns:repeat(9,1fr);
+    justify-items: center;
+    align-items: center;
+    margin: 1.25rem;
+    padding:0.625rem;
+}
+label{
+    display:block;
+    text-align: center;
+    font-size: .9rem;
+}
+#banner1 img{
+    width:100%;
+    height: auto;
+}
+#banner1{
+    display:grid;
+    justify-items: center;
+    align-items: center;
+    margin: 1.25rem;
+    margin-bottom: 2.188rem;
+}
+.upperbanners img{
+    width:100%;
+    height:auto;
+}
+.upperbanners{
+    display:grid;
+    grid-template-columns: repeat(3,auto);
+    justify-items: center;
+    align-items: center;
+    margin: 1.25rem;
+}
+
+.lowerbanners{
+    display: grid;
+    background-color: white;
+    grid-template-columns: repeat(6,auto);
+    grid-auto-rows: auto;
+    justify-items: center;
+    align-items: center;
+    margin: 1.25rem;
+}
+.lowerbanners img{
+    width:100%;
+    height:10.625rem;
+}
+#lhead{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    padding: 3.125rem;
+    font-size: larger;
+}
+.lbanner{
+    width:35vw;
+    height: 25vh;
+    border:.5px solid rgb(217, 212, 212);
+    border-radius: 0.313rem;
+    padding: 1vw;
+    margin-bottom: 2.5rem;
+}
+footer{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    justify-items: center;
+    align-items: center;
+    background-color: black;
+    justify-content: space-around;
+    text-align: center;
+    font-size: small;
+    margin: 1.25rem;
+}
+footer ul{
+    list-style: none;
+    margin-top: 0.938rem;
+}
+footer ul li{
+   
+    padding:0.5rem;
+}
+footer ul li a{
+    text-decoration: none;
+    color:white;
+    
+}
+.spl{
+    color:rgb(127, 125, 125);
+    margin-bottom: 2.5rem;
+    font-size: larger;
+    
+}
+#foottext{
+    color:white;
+    grid-column-start: 2;
+    text-align: center;   
+}
+
+
+/* for mobile devices with max-width:480px */
+@media screen and (max-width:480px){
+     header{
+        
+        grid-template-columns: 1fr;
+        justify-items: center;
+        font-size: .9rem;
+        }
+        header img{
+            width:26vw;
+            height:auto;
+            margin-bottom:1.5rem;
+        }
+        header input{
+            width:60vw;
+       }
+        #search{
+            padding-right: 1.8rem;
+            header{
+                grid-template-columns: 1fr;
+                justify-items: center;
+                font-size: .9rem;
+                }
+                header img{
+                    width:26vw;
+                    height:auto;
+                    margin-bottom:1.5rem;
+                }
+                header input{
+                    width:60vw;
+               }
+                #search{
+                    padding-right: 1.7rem;
+                }
+                #login{
+                    margin-right: 10rem;
+                    margin-top: 1.2rem;
+                    padding-right: 1.2rem;
+                }
+                #cart{
+                    padding-right: .8rem;
+                }
+        }
+        #login{
+            margin-right: 10rem;
+            margin-top: 1.2rem;
+            padding-right: 1.2rem;
+        }
+        #cart{
+            padding-right: .8rem;
+        }
+    .container{
+        
+        grid-template-columns: repeat(2,auto);
+    }
+    #banner1 img{
+        width:100%;
+        height: 35vh;
+        object-fit:cover;
+        zoom: 55%;
+    }
+    .upperbanners{
+        grid-template-columns: 1fr;
+    }
+    #lhead{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .lowerbanners{
+        display:grid;
+        grid-template-columns: repeat(2,auto);
+
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .footnav{
+        margin-right: 2.5rem;
+    } 
+}
+
+/* Design to support Tablet and Desktop */
+@media screen and (min-width:768px){
+    .lbanner{
+        width:12vw;
+        height: 25vh;
+       
+    }
+}
+
+/* Design for the orientation is portrait*/
+@media screen and (orientation:portrait) and (480.1px<= width <=779.99px){
+header{
+    grid-template-columns: 1fr;
+    justify-items: center;
+    font-size: .9rem;
+    }
+    header img{
+        width:26vw;
+        height:auto;
+        margin-bottom:1.5rem;
+    }
+    header input{
+        width:60vw;
+   }
+    #search{
+        padding-right: 1.7rem;
+    }
+    #login{
+        margin-right: 10rem;
+        margin-top: 1.2rem;
+        padding-right: 1.2rem;
+    }
+    #cart{
+        padding-right: .8rem;
+    }
+.container{
+        
+    grid-template-columns: repeat(3,auto);
+}
+#banner1{
+    width:89vw;
+}
+#banner1 img{
+    height: 30vh;
+    object-fit: cover;
+    zoom: 90%;
+    padding-left: 2rem;
+   
+}
+.upperbanners{
+    grid-template-columns: 1fr;
+}
+.ubanner{
+    width: 100%;
+}
+.upperbanners img{
+    width:100%;
+    height:15rem;
+}
+#lhead{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.lowerbanners{
+    display:grid;
+    grid-template-columns: repeat(3,auto);
+
+}
+.lbanner{
+    width: 22vw;
+}
+}
+
+/* Design for the aspect ratio: 16/9 */
+
+ @media screen and (aspect-ratio:16/9){
+   .lbanner img{
+        width:100%;
+        height: 100%;
+}
+ }
+
