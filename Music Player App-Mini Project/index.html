@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <header>
+        <div class="head light">
+            <button class="light" id="theme" >Theme</button>
+            <h1 id="heading">Music Player</h1>
+           
+        </div>
+      </header>
+      <div class="container">
+        <div class="allSongsDiv">
+            <form id="selectGenreForm">
+                <label for="selectGenre" id="lbl">Filter by Genre</label>
+              <select id="selectGenre">
+                <option value="All">All</option>
+                <option value="Rock">Rock</option>
+                <option value="Pop">Pop</option>
+                <option value="Hip Hop">Hip-hop</option>
+               </select>
+            </form>
+            <h1>All Songs</h1>
+            <div id="filteredSongs"></div>
+            </div>
+        <div class="cardDiv">
+            <div id="songImgDiv">
+                <div class="songImg">
+                    <img  src="/imgs/defaultimg.jpeg" alt="Image is not loaded" class="songImage"/>
+                </div>
+                <div class="songdetails">
+                    <h2 id="songName">Song name</h2>
+                    <p id="songArtist">Artist</p>
+                </div>
+                
+            </div>
+            <div id="audDiv">
+                <audio id="aud" controls="controls" src="">
+                    <source src="#" type="audio" id="audioSRC"/>
+                    Your Browser does not support the audio
+                </audio>
+            </div>
+           
+            <div id="prevnextbtn">
+                <button id="prev" class="optbtn">Prev</button>
+                <button id="next" class="optbtn">Next</button>
+            </div>
+            <div id="addList">    
+            <button id="addToPlayList">Add To Playlist</button>
+        </div>
+        </div>
+        <div class="playListDiv">
+            <div id="searchDiv">
+                <input type="text" id="search" placeholder=" create your own playlist...">
+                <button id="searchBtn">Create Playlist</button>
+            </div>
+            <h2>Current playlist</h1>
+            <div id="currentPlaylist">
+                
+            </div>
+            <h2>All playlist</h1>
+            <div id="allPlaylist">
+                
+            </div>
+        </div>
+      </div>
+      
+
+    <script src="script.js"></script>
+</body>
+</html>

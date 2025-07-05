@@ -1,0 +1,203 @@
+*{
+    padding:0px;
+    margin: 0px;
+    overflow-x: hidden;
+    
+    
+}
+.head{
+    text-align: center;
+    padding: 3rem;
+    margin-bottom: 2rem;
+    background-color:antiquewhite;
+    background-color:rgb(101, 145, 226);
+    
+}
+#theme{
+    display: block;
+    width:3.9rem;
+    height: 5vh;
+    float: right;
+    font-style: bold;
+    box-shadow: 5px 2px;
+}
+#theme:hover{
+    cursor: pointer;
+}
+
+#heading{
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.songsFiltered{
+    display: flex;
+    width: 15vw;
+    height: 6vh;
+    margin: 2rem;
+    margin-left: 0;
+    background-color:  rgb(47, 98, 193);
+    color:white;
+    font-size: .9rem;
+    padding: .5rem;
+    padding-left: 2vw;
+    border-radius: 5px;
+    overflow: hidden;
+    
+}
+.songsFiltered:hover{
+    background-color: lightblue;
+    color:blue;
+}
+.songsFiltered:hover{
+    cursor:pointer;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    height:73vh;
+    
+}
+.allSongsDiv{
+background-color: rgb(101, 145, 226);
+width:26%;
+padding: 2rem;
+border-radius: 10px;
+
+}
+
+
+#lbl{
+    font-size: 1.2rem;
+    margin-right: 1.1rem;
+    font-weight: 500;
+}
+#selectGenre{
+    width: 4.9rem;
+    height: 2rem;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: lightgrey;
+    background-color: gr;
+}
+#selectGenreForm{
+    margin-bottom: 1.6rem;
+}
+.cardDiv{
+    background-color:rgb(101, 145, 226);
+    width:37%;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 10px 0px 10px rgb(124, 119, 119);
+    overflow: hidden;
+}
+.songImage{
+    width:90%;
+    margin-top: 10px;
+    height: 250px;
+}
+
+#songImgDiv{
+    height: 60%;
+    width: 100%;
+    background-color:rgb(47, 98, 193);
+    border-radius: 15px;
+    margin-bottom:2rem ;
+}
+.songImg{
+    text-align: center;
+    
+}
+.songdetails{
+   margin-left: 2rem;
+   
+}
+
+#audDiv{
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+#aud{
+    width:15vw;
+    height:8vh;
+}
+#prevnextbtn{
+    text-align: center;
+}
+#prev, #next{
+    width:4vw;
+    height: 4vh;
+    background-color: blueviolet;
+    color:aliceblue;
+    font-style: bold;
+
+}
+#prev, #next, #addToPlayList:hover{
+    
+    cursor: pointer;
+}
+#addList{
+    text-align: center;
+    margin-top: 1rem;
+}
+#addToPlayList{
+    width:9vw;
+    height: 5.5vh;
+    background-color: blueviolet;
+    color:aliceblue;
+    font-style: bold;
+    overflow: hidden;
+    
+}
+.playListDiv{
+    background-color:rgb(101, 145, 226);
+    width:22%;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 10px 0px 10px rgb(124, 119, 119);
+    position: relative;
+    top:5rem;
+    height:55vh
+}
+
+#search{
+    height: 2rem;
+    width: 10vw;
+    /* border-radius: 5px; */
+    margin-right: 1rem;
+    background-color:aliceblue;
+    margin-bottom: 10px;
+}
+#searchBtn{
+    height: 2rem;
+    width:8vw;
+    font-size: 1rem;
+    box-shadow: 5px 2px;
+}
+#searchBtn:hover{
+    cursor: pointer;
+}
+#currentPlaylist, #allPlaylist{
+    margin: 10px;
+}
+
+.playListBtn{
+    display: flex;
+    text-align: center;
+    height: 4.5vh;
+    margin: 1rem;
+    margin-left: 2vw;
+    background-color:  rgb(47, 98, 193);
+    color:white;
+    font-size: 1rem;
+    padding: .5rem;
+    border-radius: 5px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.playListBtn:hover{
+    background-color: lightblue;
+    color: blue;
+    cursor:pointer ;
+}
